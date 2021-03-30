@@ -9,7 +9,7 @@ const buildHtml = () => {
     .pipe(plumber())
     .pipe(pug({
       pretty: true
-    }).render())
+    }))
     .pipe(inlinecss())
     .pipe(gulp.dest('build'))
 }
